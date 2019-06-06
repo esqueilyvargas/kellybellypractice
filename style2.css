@@ -1,0 +1,206 @@
+html{
+  background-color: #CBA949;
+}
+body{
+  background-color:#CBA949;
+}
+.pic {
+  width: 300px;
+}
+#top {
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: inherit;
+}
+
+#logo {
+  text-align:right;
+  width: 40vw;
+  height: 15vw;
+}
+
+#wrapper{
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(151, 151, 151);
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-color: #882d2c;
+  justify-content: center;
+}
+
+li{
+  float: left;
+
+}
+
+li a, .drop-btn{
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 14px  16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover, .drop-btn:hover{
+  background-color: #CBA949;
+}
+
+li.dropdown{
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color:#882d2c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: #00000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover{
+  background-color: #CBA949;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.fling-minislide {
+  background-repeat: no-repeat;
+  width:85vw;
+  height:50vw;
+  overflow:hidden;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  top: 350px; /* we forgot units and i think that messed it up */
+}
+
+.fling-minislide img{
+  position:absolute;
+  animation:fling-minislide 12s infinite;
+  opacity:0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fling-minislide {
+  25%{opacity:1;}
+  40%{opacity:0;}
+}
+
+.fling-minislide img:nth-child(4) {
+  animation-delay:0s;
+}
+.fling-minislide img:nth-child(3) {
+  animation-delay:5s;
+}
+.fling-minislide img:nth-child(2) {
+  animation-delay:10s;
+}
+.fling-minislide img:nth-child(1) {
+  animation-delay:15s;
+}
+h3{
+  background-color: #882d2c;
+  font-family: 'Alfa Slab One', cursive;
+}
+#board{
+  background-color: #882d2c;
+  color: #CBA949;
+  border-bottom-color: blue;
+  font-size: 15pt;
+  text-align: center;
+  width:15vw;
+  height: max-content;
+  border-radius: 15px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+
+
+}
+
+#board a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#board a:visited{
+  text-decoration: none;
+}
+#buttons{
+  background-color: #CBA949;
+  display:flex;
+  flex-direction: column;
+  padding: 5px;
+  position:fixed;
+  right: 15px;
+  top: 15px;
+  border-radius:15px;
+}
+
+#buttons img {
+  width: 50px
+}
+
+#prospect{
+  position: absolute;
+  top: 1350px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#a{
+  font-family: 'Francois One', sans-serif;
+  font-size: 22pt;
+}
+#b  {
+  font-family: 'Assistant', sans-serif;
+  font-size: 16pt;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+}
